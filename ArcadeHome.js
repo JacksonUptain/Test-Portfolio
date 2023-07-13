@@ -117,7 +117,7 @@ scene.add(cat);
 
 const clock = new THREE.Clock();
 const delta = clock.getDelta();
-const modelCharacterURL = "Models/CuteAlienPlayer/scene.gltf";
+const modelCharacterURL = "CuteAlienPlayer/scene.gltf";
 var modelCharacter;
 let modelCharacterCom = {};
 animate();
@@ -139,7 +139,7 @@ var loader = new GLTFLoader();
 		console.log(modelCharacter)	;
 	}	);
 
-	loader.load( "Models/CuteAlienPlayer/scene.gltf", function (gltf) {
+	loader.load( "CuteAlienPlayer/scene.gltf", function (gltf) {
 		modelCharacterCom = gltf.scene;
 		modelCharacterCom.scale.set(0.5, 0.5, 0.5);
 		modelCharacterCom.position.set(0, -15, 0);
@@ -150,7 +150,7 @@ var loader = new GLTFLoader();
 
 
 //A BUNCH OF MODELS!!
-	loader.load("Models/DuckHunt/Duckhunt.gltf", function (gltf) {
+	loader.load("DuckHunt/Duckhunt.gltf", function (gltf) {
 		
 		const a = gltf.scene;
 
@@ -177,13 +177,13 @@ vidMesh3.position.set(-19, 2.3, -90);
 vidMesh3.rotation.set(0, 0.8, 0);
 vidMesh3.scale.set(0.35, 0.35, 0.35);
 scene.add(vidMesh3);
-	//loader.load("Models/arcade_invaders/scene.gltf", function (gltf) {
+	//loader.load("arcade_invaders/scene.gltf", function (gltf) {
 		//const b = gltf.scene;
 		//b.position.set(0, -1, -30);
 		//b.scale.set(0.3, 0.3, 0.3)
 		//scene.add(b);
 	//})
-	loader.load("Models/arcade_machine (1)/scene.gltf", function (gltf) {
+	loader.load("arcade_machine (1)/scene.gltf", function (gltf) {
 		const c = gltf.scene;
 		c.position.set(-15, 0, -89);
 		c.scale.set(0.6, 0.6, 0.6);
@@ -196,7 +196,7 @@ scene.add(vidMesh3);
 		scene.add(lightC);
 	})
 
-	loader.load("Models/arcade_machine (2)/scene.gltf", function (gltf) {
+	loader.load("arcade_machine (2)/scene.gltf", function (gltf) {
 		const d = gltf.scene;
 		d.position.set(-12, 2, -89);
 		d.scale.set(0.6, 0.6, 0.6);
@@ -216,7 +216,7 @@ scene.add(vidMesh3);
 		scene.add(lightD);
 		scene.add(lightD.target);
 	})
-	loader.load("Models/asteroids_arcade/scene.gltf", function (gltf) {
+	loader.load("asteroids_arcade/scene.gltf", function (gltf) {
 		const e = gltf.scene;
 		e.position.set(-9.5, 0.8, -88);
 		e.scale.set(0.025, 0.025, 0.025);
@@ -228,7 +228,7 @@ scene.add(vidMesh3);
 		lightE.position.set = e.position;
 		scene.add(lightE);
 	})
-	loader.load("Models/arcade_machine.glb", function (gltf) {
+	loader.load("arcade_machine.glb", function (gltf) {
 		const f = gltf.scene;
 		f.position.set(-7.4, 2, -92);
 
@@ -239,12 +239,12 @@ scene.add(vidMesh3);
 		lightF.position.set = f.position;
 		scene.add(lightF);
 	})
-	//loader.load("Models/arcade_machine.glb", function (gltf) {
+	//loader.load("arcade_machine.glb", function (gltf) {
 	//	gltf.scene.scale.set(0.03, 0.03, 0.03)
 	//	const g = gltf.scene;
 	//	scene.add(g);
 	//})
-	loader.load("Models/defender_arcade/scene.gltf", function (gltf) {
+	loader.load("defender_arcade/scene.gltf", function (gltf) {
 		const h = gltf.scene;
 		h.scale.set(0.025, 0.025, 0.025);
 		h.position.set(-21.5, -0.5, -86);
@@ -258,7 +258,7 @@ scene.add(vidMesh3);
 
 	})	
 
-	loader.load("Models/sugar_rush_arcade_machine/scene.gltf", function (gltf) {
+	loader.load("sugar_rush_arcade_machine/scene.gltf", function (gltf) {
 		const i = gltf.scene;
 		i.position.set(-7, 0, -45)
 		i.scale.set(0.45, 0.45, 0.45);
@@ -268,7 +268,7 @@ scene.add(vidMesh3);
 
 		
 	})
-	loader.load("Models/sugar_rush_arcade_machine/scene.gltf", function (gltf) {
+	loader.load("sugar_rush_arcade_machine/scene.gltf", function (gltf) {
 		const i = gltf.scene;
 		i.position.set(-9.3, 0, -45)
 		i.scale.set(0.45, 0.45, 0.45);
@@ -307,49 +307,49 @@ vidMesh2.scale.set(0.3, 0.3, 0.3);
 scene.add(vidMesh2);
 
 
-	/*loader.load("Models/final_fight_arcade/scene.gltf", function (gltf) {
+	/*loader.load("final_fight_arcade/scene.gltf", function (gltf) {
 		gltf.scene.scale.set(0.03, 0.03, 0.03)
 		const j = gltf.scene;
 		scene.add(j);
 	})
-	loader.load("Models/fnaf_arcades/scene.gltf", function (gltf) {
+	loader.load("fnaf_arcades/scene.gltf", function (gltf) {
 		gltf.scene.scale.set(0.03, 0.03, 0.03)
 		const k = gltf.scene;
 		scene.add(k);
 	})
-	loader.load("Models/ghostbusters_arcade_machine_low-poly/scene.gltf", function (gltf) {
+	loader.load("ghostbusters_arcade_machine_low-poly/scene.gltf", function (gltf) {
 		gltf.scene.scale.set(0.03, 0.03, 0.03)
 		const l = gltf.scene;
 		scene.add(l);
 	})
-	loader.load("Models/kirby_arcade/scene.gltf", function (gltf) {
+	loader.load("kirby_arcade/scene.gltf", function (gltf) {
 		gltf.scene.scale.set(0.03, 0.03, 0.03)
 		const m = gltf.scene;
 		scene.add(m);
 	})
 
-	loader.load("Models/neo-geo_arcade_cabinet/scene.gltf", function (gltf) {
+	loader.load("neo-geo_arcade_cabinet/scene.gltf", function (gltf) {
 		gltf.scene.scale.set(0.03, 0.03, 0.03)
 		const n = gltf.scene;
 		scene.add(n);
 	})
-	loader.load("Models/pacman_arcade__animation (1)/scene.gltf", function (gltf) {
+	loader.load("pacman_arcade__animation (1)/scene.gltf", function (gltf) {
 		gltf.scene.scale.set(0.03, 0.03, 0.03)
 		const o = gltf.scene;
 		scene.add(o);
 	})
-	loader.load("Models/claw_arcade_animated_.glb_v1.0_free_low_poly.glb", function (gltf) {
+	loader.load("claw_arcade_animated_.glb_v1.0_free_low_poly.glb", function (gltf) {
 
 		gltf.scene.scale.set(0.03, 0.03, 0.03)
 		const p = gltf.scene;
 		scene.add(p);
 	})
-	loader.load("Models/coke_machine.glb", function (gltf) {
+	loader.load("coke_machine.glb", function (gltf) {
 		gltf.scene.scale.set(0.03, 0.03, 0.03)
 		const q = gltf.scene;
 		scene.add(q);
 	})
-	loader.load("Models/low_poly_skeeball_machine.glb", function (gltf) {
+	loader.load("low_poly_skeeball_machine.glb", function (gltf) {
 		gltf.scene.scale.set(0.03, 0.03, 0.03)
 		const r = gltf.scene;
 		scene.add(r);
@@ -404,7 +404,7 @@ function render() {
 
 
 
-//gltfLoader.load('Models/DroidPlayer/scene.gltf' , function (gltf)  {
+//gltfLoader.load('DroidPlayer/scene.gltf' , function (gltf)  {
 
    // const job = gltf.scene;
     
