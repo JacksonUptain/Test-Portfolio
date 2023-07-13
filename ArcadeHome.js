@@ -627,11 +627,7 @@ function animationLoop(timestamp)
 		}
 	})
 	
-	firebase.auth().signInAnonymously().catch((error) => {
-		var errorCode = error.code;
-		var errorMessage = error.message;
-		console.log(errorCode, errorMessage);
-	});
+	
 
 	
 }
@@ -651,7 +647,11 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 var database = firebase.database();
-
+firebase.auth().signInAnonymously().catch((error) => {
+		var errorCode = error.code;
+		var errorMessage = error.message;
+		console.log(errorCode, errorMessage);
+	});
 
 
 renderer.setAnimationLoop(animationLoop);
