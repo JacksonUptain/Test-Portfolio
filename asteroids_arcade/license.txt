@@ -1,0 +1,11 @@
+Model Information:
+* title:	Asteroids Arcade
+* source:	https://sketchfab.com/3d-models/asteroids-arcade-0163d232b321401fb2b9cebd387d0aa3
+* author:	Delinx (https://sketchfab.com/delinx)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Asteroids Arcade" (https://sketchfab.com/3d-models/asteroids-arcade-0163d232b321401fb2b9cebd387d0aa3) by Delinx (https://sketchfab.com/delinx) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

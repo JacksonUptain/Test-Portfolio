@@ -1,0 +1,11 @@
+Model Information:
+* title:	Arcade Invaders
+* source:	https://sketchfab.com/3d-models/arcade-invaders-8c96ac36c52e4cf2a33cf605bd762014
+* author:	tef (https://sketchfab.com/cyberground)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Arcade Invaders" (https://sketchfab.com/3d-models/arcade-invaders-8c96ac36c52e4cf2a33cf605bd762014) by tef (https://sketchfab.com/cyberground) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
