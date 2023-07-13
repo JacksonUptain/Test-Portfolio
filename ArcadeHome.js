@@ -497,7 +497,7 @@ function animationLoop(timestamp)
 		tail1.position.lerp( cat.position, 0.05 );	
 		tail2.position.lerp( tail1.position, 0.01 );	
 		tail3.position.lerp( tail2.position, 0.01 );	
-		camera.position.lerp( tail3.position, 0.1 );
+		camera.position.lerp( tail3.position, 0.01 );
 	
 		// set camera position
 		camera.position.sub( cat.position );
