@@ -12,7 +12,7 @@ document.getElementById('alfred').onclick = function() {
 
 
 let homeImg = document.getElementById("jackson").onclick = function() {
-	window.open("/ArcadeOutside/indexmain.html")
+	window.open("https://jacksonuptain.github.io/Test-Portfolio2/index.html")
 };
 
 
@@ -150,7 +150,7 @@ var loader = new GLTFLoader();
 
 
 //A BUNCH OF MODELS!!
-	loader.load("DuckHunt/Duckhunt.gltf", function (gltf) {
+	loader.load("DuckHunt/DuckHunt.gltf", function (gltf) {
 		
 		const a = gltf.scene;
 
