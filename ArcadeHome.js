@@ -154,7 +154,7 @@ var loader = new GLTFLoader();
 		
 		const a = gltf.scene;
 
-		a.position.set(-19, 1, -90);
+		a.position.set(-19, 1, -60);
 		a.scale.set(0.006, 0.006, 0.006)
 		a.rotation.set(0, -45, 0);
 		scene.add(a);
@@ -173,7 +173,7 @@ const videoMaterial3 = new THREE.MeshBasicMaterial({map: VideoTexture3});
 const vidPlane3 = new THREE.PlaneGeometry(16, 9);
 vidPlane3.scale(0.4, 0.4, 0.4);
 const vidMesh3 = new THREE.Mesh(vidPlane3, videoMaterial3);
-vidMesh3.position.set(-19, 2.3, -90);
+vidMesh3.position.set(-19, 2.3, -60);
 vidMesh3.rotation.set(0, 0.8, 0);
 vidMesh3.scale.set(0.35, 0.35, 0.35);
 scene.add(vidMesh3);
@@ -185,7 +185,7 @@ scene.add(vidMesh3);
 	//})
 	loader.load("arcade_machine (1)/scene.gltf", function (gltf) {
 		const c = gltf.scene;
-		c.position.set(-15, 0, -89);
+		c.position.set(-15, 0, -59);
 		c.scale.set(0.6, 0.6, 0.6);
 		c.rotation.set(0, -44, 0);
 		scene.add(c);
@@ -198,7 +198,7 @@ scene.add(vidMesh3);
 
 	loader.load("arcade_machine (2)/scene.gltf", function (gltf) {
 		const d = gltf.scene;
-		d.position.set(-12, 2, -89);
+		d.position.set(-12, 2, -59);
 		d.scale.set(0.6, 0.6, 0.6);
 		d.rotation.set(0, 0, 0);
 		scene.add(d);
@@ -211,14 +211,14 @@ scene.add(vidMesh3);
 		const lightD = new THREE.SpotLight(
 			0x0000FF, 3.3, distance, angle, penumbra, decay
 		);
-		lightD.position.set(-12, 8, -78);
-		lightD.target.position.set(-12, 2, -89);
+		lightD.position.set(-12, 8, -48);
+		lightD.target.position.set(-12, 2, -59);
 		scene.add(lightD);
 		scene.add(lightD.target);
 	})
 	loader.load("asteroids_arcade/scene.gltf", function (gltf) {
 		const e = gltf.scene;
-		e.position.set(-9.5, 0.8, -88);
+		e.position.set(-9.5, 0.8, -58);
 		e.scale.set(0.025, 0.025, 0.025);
 		e.rotation.set(0, 48, 0);
 		e.transparent = false;
@@ -230,7 +230,7 @@ scene.add(vidMesh3);
 	})
 	loader.load("arcade_machine.glb", function (gltf) {
 		const f = gltf.scene;
-		f.position.set(-7.4, 2, -92);
+		f.position.set(-7.4, 2, -62);
 
 		f.scale.set(2.5, 2.5, 2.5);
 		scene.add(f);
@@ -247,7 +247,7 @@ scene.add(vidMesh3);
 	loader.load("defender_arcade/scene.gltf", function (gltf) {
 		const h = gltf.scene;
 		h.scale.set(0.025, 0.025, 0.025);
-		h.position.set(-21.5, -0.5, -86);
+		h.position.set(-21.5, -0.5, -56);
 		h.rotation.set(0, 5, 0);
 		scene.add(h);
 		const lightH = new THREE.PointLight(0xFFFFFF, 0.01);
@@ -260,7 +260,7 @@ scene.add(vidMesh3);
 
 	loader.load("sugar_rush_arcade_machine/scene.gltf", function (gltf) {
 		const i = gltf.scene;
-		i.position.set(-7, 0, -45)
+		i.position.set(-3, 0, -62)
 		i.scale.set(0.45, 0.45, 0.45);
 		scene.add(i);
 		
@@ -270,7 +270,7 @@ scene.add(vidMesh3);
 	})
 	loader.load("sugar_rush_arcade_machine/scene.gltf", function (gltf) {
 		const i = gltf.scene;
-		i.position.set(-9.3, 0, -45)
+		i.position.set(-5.3, 0, -62)
 		i.scale.set(0.45, 0.45, 0.45);
 		scene.add(i);
 		
@@ -287,7 +287,7 @@ const videoMaterial = new THREE.MeshBasicMaterial({map: VideoTexture});
 const vidPlane = new THREE.PlaneGeometry(16, 9);
 vidPlane.scale(0.4, 0.4, 0.4);
 const vidMesh = new THREE.Mesh(vidPlane, videoMaterial);
-vidMesh.position.set(-6.9, 2.85, -44.7);
+vidMesh.position.set(-2.9, 2.85, -61.7);
 vidMesh.rotation.set(0, 0, 0);
 vidMesh.scale.set(0.3, 0.3, 0.3);
 scene.add(vidMesh);
@@ -301,7 +301,7 @@ const vidPlane2 = new THREE.PlaneGeometry(16, 9);
 vidPlane2.scale(0.4, 0.4, 0.4);
 
 const vidMesh2 = new THREE.Mesh(vidPlane2, videoMaterial2);
-vidMesh2.position.set(-9.2, 2.85, -44.7);
+vidMesh2.position.set(-5.2, 2.85, -61.7);
 vidMesh2.rotation.set(0, 0, 0);
 vidMesh2.scale.set(0.3, 0.3, 0.3);
 scene.add(vidMesh2);
@@ -537,7 +537,7 @@ function animationLoop(timestamp)
 	}
 		// set camera orientation
 	if (modelCharacter){
-		camera.lookAt( modelCharacter.position.x, (modelCharacter.position.y + 0.4), modelCharacter.position.z - 4);
+		camera.lookAt( modelCharacter.position.x, (modelCharacter.position.y + 0.4), modelCharacter.position.z - 0.4);
 	} else {
 		camera.lookAt(cat.position);
 	}
