@@ -107,7 +107,7 @@ var catSpeed = 0,
 		tail2 = tail1.clone(),
 		tail3 = tail1.clone();
 cat.position.y = 0.85;
-cat.position.z = -25;
+cat.position.z = -15;
 scene.add(cat);
 
 
